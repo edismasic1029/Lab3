@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="nojs">
+
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no"/>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <meta charset="UTF-8">
-  <title>Edis Masic Lab</title>
+    <title>HTML Form Elements</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+    <link rel="stylesheet" media="screen" href="css/style.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div class="information">
-    <form method="get" action="#null" autocomplete="on">
-      <p>ENTER INFORMATION</p>
-      <div class="emailInput">
-        <label>
-          <input type="text" id="emailInput" name="email" placeholder="E-mail Address"><br>
-        </label>
-      </div>
-      <div class="emailInput">
-        <label>
-          <input type="text" id="phoneInput" name="phone" placeholder="Phone Number"><br>
-        </label>
-      </div>
-      <div class="date">
-        <label>
-          <input type="date" id="dateInput" name="date"><br>
-        </label>
-      </div>
-      <div>
-        <button type="submit">Submit</button>
-      </div>
-    </form>
-  </div>
+    <main id="content">
+        <form method="get" action="#null">
+            <h1>Secret Diabetes Newsletter</h1>
+            <p>
+                Sign up and learn 5 secrets to fight Diabetes!
+            </p>
+            <ol>
+                <li id="input-email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" pattern="^.+@.+$"/>
+                </li>
+                <li id="input-age-verification">
+                    <input type="checkbox" id="age-verification" name="age-verification" value="18"/>
+                    <label for="age-verification">I am over 18 years old</label>
+                </li>
+                <li id="input-submit">
+                    <input type="submit" name="submit" id="submit" value="Subscribe"/>
+                </li>
+            </ol>
+        </form>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/site.js"></script>
 </body>
+
 </html>
